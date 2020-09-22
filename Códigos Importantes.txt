@@ -1,0 +1,15 @@
+================================
+CURSO DE PHP 7.0 UDEMY HCODE
+================================
+=> RASMUS LERDORF - CRIADOR DA LINGUAGEM PHP - 1994
+=> ANDI GUTMANS & ZEEV SURASKI (ZEND - EMPRESA QUE CUIDA DO PHP) - 2004 PHP 5 / 2015 PHP 7
+
+================================
+CÓDIGO PARA INSERIR NO GITHUB
+================================
+git init
+git remote add origin (INCLUIR A URL DO GITHUB)
+git add (NOME DO ARQUIV0 OU PASTA) / git add --all (O PROJETO TODO)
+git commit -m "(COMENTÁRIO OBRIGATÓRIO)"
+git branch -M master
+git push -u origin master

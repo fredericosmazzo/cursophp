@@ -1,0 +1,1 @@
+<?php echo "Meu primeiro <strong>código PHP!</strong>"; ?>
