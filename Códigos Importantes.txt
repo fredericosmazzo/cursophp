@@ -13,3 +13,86 @@ git add (NOME DO ARQUIV0 OU PASTA) / git add --all (O PROJETO TODO)
 git commit -m "(COMENTÁRIO OBRIGATÓRIO)"
 git branch -M master
 git push -u origin master
+
+===================================
+CÓDIGOS SOBRE VARIÁVEIS
+===================================
+
+unset($variavel); (Destrói a variável)
+
+if(isset($variavel)){
+	
+	echo $variavel
+} (Verifica se a variável existe)
+
+=====================================
+TIPOS DE DADOS
+=====================================
+
+-> DADOS BÁSICOS
+	* INTEIRO
+	* FLOAT (INTEIRO COM PONTO)
+	* STRING (TEXTO)
+	*BOOLEANO (TRUE OR FALSE)
+
+-> DADOS COMPOSTOS
+	* ARRAY
+	* OBJETO
+
+-> DADOS ESPECIAIS
+	* RESOURCE
+	* NULL (DIFERENTE DE VAZIO EM NULL NÃO EXISTE VARIÁVEL ENQUANTO NO OUTRO CASO A VARIÁVEL É CRIADA, MAS AINDA SEM VALOR)
+
+=====================================
+VARIÁVEIS SUPER GLOBAIS - VARIÁVEIS PRÉ DEFINIDAS
+=====================================
+$_GET[] & $_POST[] (TODA INFORMAÇÃO VINDA POR GET OU POST É UMA STRING)
+$_SERVER[]
+$_SESSION[]
+
+=====================================
+ESCOPO DE VARIÁVEL
+=====================================
+-> Até onde "enxergamos" a variável?
+
+Se você definir uma variável como global dentro da função antes de atribuir um valor consegue acessar ela fora do escopo.
+
+======================================
+OPERADORES NO PHP
+======================================
+
+-> OPERADORES DE ATRIBUIÇÃO
+	# STRING
+		- =  (Define o valor string da variável)
+		- .  (Junta os valores de duas variáveis)
+		- .= (Adiciona alguma coisa a uma variável existente)
+	# NÚMERO
+		- += (ACRESCENTA UM VALOR A VARIÁVEL)
+		- -= (SUBTRAI UM VALOR DA VARIAVEL)
+		- *= (MULTIPLICA UM VALOR NA VARIÁVEL)
+
+-> OPERADORES ARITMÉTICOS
+	$a + $b ->  SOMA
+	$a - $b ->  SUBTRAÇÃO
+	$a * $b ->  MULTIPLICAÇÃO
+	$a / $b ->  DIVISÃO
+	$c % $d ->  MÓDULO (RESTO DA DIVISÃO)
+	$a ** $b -> POTENCIAÇÃO (UM NÚMERO ELEVADO AO OUTRO)
+
+-> OPERADORES DE COMPARAÇÃO
+
+	== (SE IGUAL QUANTO A VALOR - IGUALDADE DE VALOR)
+	=== (SE IGUAL QUANTO AO VALOR E TIPO - IGUALDADE DE IDENTIDADE)
+	< OU <= (SE MENOR OU MENOR E IGUAL)
+	> OU => (SE MAIOR OU MAIOR E IGUAL)
+	!= (SE DIFERENTE QUANTO AL VALOR)
+	!== (SE DIFERENTE QUANTO AO VALOR E TIPO DE DADO - DIFERENÇA DE IDENTIDADE)
+	<=> (SURGIU NO PHP 7 - SPACESHIP - SE O PRIMEIRO MAIOR RETORNA 1 SE OS DOIS IGUAIS RETORNA ZERO E SE O SEGUNDO MAIOR RETORNA -1)
+	??  (SURGIU NO PHP 7 - RETORNA O VALOR DA VARIÁVEL, DENTRE DIVERSAS VARIÁVEIS QUE NÃO SEJA NULL)
+	&& (SE AS DUAS CONDIÇÕES FOREM PREENCHIDAS RETORNA TRUE)
+	|| (SE PELO MENOS UMA CONDIÇÃO FOR PREENCHIDA RETORNA TRUE)
+
+-> OPERADORES DE INCREMENTO E DECREMENTO
+
+++$vairavel (PRÉ INCREMENTO ALTERA ANTES DE MOSTRAR)
+$variavel++ (PÓS INCREMENTO SÓ ALTERA DEPOIS DE MOSTRAR)
